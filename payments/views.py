@@ -17,7 +17,7 @@ def buy(request, id):
                 'product_data': {
                     'name': item.name,
                 },
-                'unit_amount': item.price,
+                'unit_amount': item.price * 100,
             },
             'quantity': 1,
         }],
