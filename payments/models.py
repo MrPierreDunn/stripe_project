@@ -2,6 +2,14 @@ from django.db import models
 
 
 class Item(models.Model):
-    name = models.CharField(max_length=255)
-    description = models.TextField()
-    price = models.IntegerField()
+    """Модель для товаров."""
+    name = models.CharField(max_length=255, verbose_name='Название товара')
+    description = models.TextField('Описание товара')
+    price = models.IntegerField('Цена', help_text='указывается в $')
+
+    def __str__(self):
+        return self.name
+
+    class Meta:
+        verbose_name = 'товар'
+        verbose_name_plural = 'Товары'
