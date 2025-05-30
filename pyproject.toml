@@ -22,8 +22,6 @@ flake8-pyproject = "^1.2.3"
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
 
-
-
 [tool.flake8]
 exclude = [
     ".git",
