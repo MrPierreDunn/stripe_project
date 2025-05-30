@@ -1,5 +1,6 @@
 from django.contrib import admin
 from django.urls import path
+
 from payments.views import buy, item_detail
 
 urlpatterns = [
